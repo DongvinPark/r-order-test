@@ -17,9 +17,9 @@ public class OrderCacheRepository {
     private final String key = CommonConstant.ORDER_QUEUE_KEY;
 
     // 새로운 들어온 주문들의 주키를 저장한다. 이때, 주문에 실패하면 false를 리턴한다.
-    public boolean pushOrder(Long orderNumber) {
+    public boolean pushOrder(String orderNumber) {
         try {
-            template.opsForList().rightPush(key, String.valueOf(orderNumber));
+            template.opsForList().rightPush(key, orderNumber);
             return true;
         } catch (Exception e) {
             log.error("신규 주문 정보 주문 큐에 푸시 실패");

@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3308/ramyeon?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true
-    username:
-    password:
+    username: root
+    password: 1234
 
   jpa:
     hibernate:
@@ -15,5 +15,5 @@ spring:
 
 aws:
   redis:
-    url: 
-    port:
+    url: localhost
+    port: 6380
