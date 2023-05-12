@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3308/ramyeon?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true
+    username:
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: false
+    database: mysql
+
+aws:
+  redis:
+    url: 
+    port:

@@ -1,0 +1,5 @@
+### redis test
+POST http://localhost:8080/redis/test/1
+
+### db test
+POST http://localhost:8080/db/test
