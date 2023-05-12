@@ -15,8 +15,8 @@ configurations {
 	}
 }
 
-bootJar {
-	archiveFileName = 'app.war'
+war {
+	archiveName 'app.war'
 }
 
 repositories {
