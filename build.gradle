@@ -16,7 +16,7 @@ configurations {
 }
 
 war {
-	archiveName 'app.war'
+	archiveName 'ROOT.war'
 }
 
 repositories {
