@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 @RequiredArgsConstructor
 public class OrderController {
     private final TestService testService;
+	
+
+    // 테스트용 주석 삽입.
 
     //메인페이지에서 뷰를 리턴해본다.
     @GetMapping("/")
